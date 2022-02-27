@@ -1,0 +1,65 @@
+#include <stdio.h>
+/*  a meat shop has many items to sell.
+    mutton is 1400 per kg
+    beef is 520 per kg
+    chicken golden is 520 per kg
+    chicken wings is 220 per kg
+    chicken neck is 160 per kg
+    chicken legs is 320 per kg
+    chicken meat is 450 per kg
+    he sells 20 kg of mutton, 30 kgs of chicken in each category, beef's sell is about half of equivalent weight of mutton and he keeps 20% profit
+    however the rate of purchase is not mentioned above
+    find the rate of purchase of all items
+    and display using c program.
+    also display profit per item according to the sell of each item
+
+*/
+
+int main()
+{
+    int mutton_kg = 1450;
+    int beef_kg = 520;
+    int chicken_golden_kg = 520;
+    int chicken_wings_kg = 220;
+    int chicken_neck_kg = 160;
+    int chicken_legs_kg = 320;
+    int chicken_meat_kg = 450;
+
+    printf("Rate of Mutton per kg is %D \n", mutton_kg);
+    printf("Rate of Beef per kg is %D \n", beef_kg);
+    printf("Rate of Chicken golden per kg is %D \n", chicken_golden_kg);
+    printf("Rate of Chicken wings per kg is %D \n", chicken_wings_kg);
+    printf("Rate of Chicken neck per kg is %D \n", chicken_neck_kg);
+    printf("Rate of Chicken legs per kg is %D \n", chicken_legs_kg);
+    printf("Rate of Chicken meat per kg is %D \n", chicken_meat_kg);
+
+    printf("price of 20kg of mutton is %d \n", mutton_kg * 20);
+    printf("profit of 20kg of mutton is %d \n", mutton_kg * 20 * 20 / 100);
+    printf("rate of purchase of mutton is %d \n", mutton_kg - mutton_kg * 20 / 100);
+
+    printf("price of 10kg of beef is %d \n", beef_kg * 10);
+    printf("profit of 10kg of beef is %d \n", beef_kg * 10 * 20 / 100);
+    printf("rate of purchase of beef is %d \n", beef_kg - beef_kg * 20 / 100);
+
+    printf("price of 30kg of chicken golden is %d \n", chicken_golden_kg * 30);
+    printf("profit of 30kg of chicken golden is %d \n", chicken_golden_kg * 30 * 20 / 100);
+    printf("rate of purchase of chicken golden is %d \n", chicken_golden_kg - chicken_golden_kg * 20 / 100);
+
+    printf("price of 30kg of chicken wings is %d \n", chicken_wings_kg * 30);
+    printf("profit of 30kg of chicken wings is %d \n", chicken_wings_kg * 30 * 20 / 100);
+    printf("rate of purchase of chicken wings is %d \n", chicken_wings_kg - chicken_wings_kg * 20 / 100);
+
+    printf("price of 30kg of chicken legs is %d \n", chicken_legs_kg * 30);
+    printf("profit of 30kg of chicken legs is %d \n", chicken_legs_kg * 30 * 20 / 100);
+    printf("rate of purchase of chicken legs is %d \n", chicken_legs_kg - chicken_legs_kg * 20 / 100);
+
+    printf("price of 30kg of chicken neck is %d \n", chicken_neck_kg * 30);
+    printf("profit of 30kg of chicken neck is %d \n", chicken_neck_kg * 30 * 20 / 100);
+    printf("rate of purchase of chicken neck is %d \n", chicken_neck_kg - chicken_neck_kg * 20 / 100);
+
+    printf("price of 30kg of chicken meat is %d \n", chicken_meat_kg * 30);
+    printf("profit of 30kg of chicken meat is %d \n", chicken_meat_kg * 30 * 20 / 100);
+    printf("rate of purchase of chicken meat is %d \n", chicken_meat_kg - chicken_meat_kg * 20 / 100);
+
+    return 0;
+}
