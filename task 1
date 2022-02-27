@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main()
+{
+ /* mr noman is earning rs500 per day, he works for 26 days in a month, out of his whole income of per month, he gives 20% at home for grocery.
+10% school fees, 15% self expenses, 30 for rent, and utilities, 5% maintenance, 10% savings and 10% for social cause.
+calculate % display 
+grocery 20%
+school fees 10% */
+
+int income_per_day;
+int total_days;
+
+printf("what is the per day income of mr noman? \n");
+scanf("%d", &income_per_day);
+printf("mr noman works for how many days \n");
+scanf("%d", &total_days);
+printf("%d\n",income_per_day);
+printf("%d\n",total_days);
+
+int total_income = total_days * income_per_day;
+int grocery = total_income * 20 / 100;
+int school_fee = total_income * 10 / 100;
+
+printf("income of mr noman is %d \n",total_income);
+printf("amount given for groceries is %d \n", grocery);
+printf("amount given for school fees is %d \n", school_fee);
+
+return 0;
+}
