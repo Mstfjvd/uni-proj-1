@@ -1,0 +1,32 @@
+# include<stdio.h>
+
+int main()
+{
+    int jan=120, feb=100, march=80, dec=150;
+    int salary = 20000;
+    
+    printf("Salary is %d \n", salary);
+     printf("amount for late hours of month January %d\n", jan);
+     printf("amount for late hours of month Febuary %d\n", feb);
+     printf("amount for late hours of month March %d\n", march);
+     printf("amount for late hours of month December %d\n", dec);
+    
+    int sal_in_j = salary + jan;
+    int tax_inj = sal_in_j * 10 / 100;
+    int sal_in_f = salary + feb;
+    int tax_inf = sal_in_f * 12 / 100;
+    int sal_in_mrch = salary + march;
+    int tax_inmrch = sal_in_mrch * 14 / 100;
+    int sal_in_dc = salary + jan;
+    int tax_dc = sal_in_dc * 8 / 100;
+    int total_tax = tax_dc + tax_inf + tax_inmrch + tax_inj;
+
+    printf("total income is %d \n", salary * 4 +jan+feb+march+dec - total_tax );
+
+
+
+    
+
+
+return 0;
+}
